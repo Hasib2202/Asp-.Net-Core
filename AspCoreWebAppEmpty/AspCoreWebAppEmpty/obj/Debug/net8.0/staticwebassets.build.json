@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "I5CcCoQx2RwM7o5CkieTkD//JY9zVzoxLr1z89Lb+IU=",
+  "Source": "AspCoreWebAppEmpty",
+  "BasePath": "_content/AspCoreWebAppEmpty",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
