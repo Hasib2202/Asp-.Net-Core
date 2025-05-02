@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GitHub\\Asp Dot Net Core\\AspDotNetCoreMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D9AB7EBA-14FC-42D4-A893-D6AEBDC6BB94}|AspDotNetCoreMVC\\AspDotNetCoreMVC.csproj|d:\\github\\asp dot net core\\aspdotnetcoremvc\\aspdotnetcoremvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9AB7EBA-14FC-42D4-A893-D6AEBDC6BB94}|AspDotNetCoreMVC\\AspDotNetCoreMVC.csproj|solutionrelative:aspdotnetcoremvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9AB7EBA-14FC-42D4-A893-D6AEBDC6BB94}|AspDotNetCoreMVC\\AspDotNetCoreMVC.csproj|d:\\github\\asp dot net core\\aspdotnetcoremvc\\aspdotnetcoremvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D9AB7EBA-14FC-42D4-A893-D6AEBDC6BB94}|AspDotNetCoreMVC\\AspDotNetCoreMVC.csproj|solutionrelative:aspdotnetcoremvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9AB7EBA-14FC-42D4-A893-D6AEBDC6BB94}|AspDotNetCoreMVC\\AspDotNetCoreMVC.csproj|d:\\github\\asp dot net core\\aspdotnetcoremvc\\aspdotnetcoremvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9AB7EBA-14FC-42D4-A893-D6AEBDC6BB94}|AspDotNetCoreMVC\\AspDotNetCoreMVC.csproj|solutionrelative:aspdotnetcoremvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\GitHub\\Asp Dot Net Core\\AspDotNetCoreMVC\\AspDotNetCoreMVC\\Program.cs",
+              "RelativeDocumentMoniker": "AspDotNetCoreMVC\\Program.cs",
+              "ToolTip": "D:\\GitHub\\Asp Dot Net Core\\AspDotNetCoreMVC\\AspDotNetCoreMVC\\Program.cs",
+              "RelativeToolTip": "AspDotNetCoreMVC\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T10:33:40.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\Asp Dot Net Core\\AspDotNetCoreMVC\\AspDotNetCoreMVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "AspDotNetCoreMVC\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\GitHub\\Asp Dot Net Core\\AspDotNetCoreMVC\\AspDotNetCoreMVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "AspDotNetCoreMVC\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T10:29:22.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\GitHub\\Asp Dot Net Core\\AspDotNetCoreMVC\\AspDotNetCoreMVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "AspDotNetCoreMVC\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\GitHub\\Asp Dot Net Core\\AspDotNetCoreMVC\\AspDotNetCoreMVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "AspDotNetCoreMVC\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAADgvw8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T10:14:36.051Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
