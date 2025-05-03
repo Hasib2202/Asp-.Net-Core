@@ -225,3 +225,5 @@ D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\RoutingWithoutMVC\RoutingWithoutMVC\obj
 D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\RoutingWithoutMVC\RoutingWithoutMVC\obj\Debug\net8.0\RoutingWithoutMVC.pdb
 D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\RoutingWithoutMVC\RoutingWithoutMVC\obj\Debug\net8.0\RoutingWithoutMVC.genruntimeconfig.cache
 D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\RoutingWithoutMVC\RoutingWithoutMVC\obj\Debug\net8.0\ref\RoutingWithoutMVC.dll
+D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\RoutingWithoutMVC\RoutingWithoutMVC\obj\Debug\net8.0\RoutingWithoutMVC.RazorAssemblyInfo.cache
+D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\RoutingWithoutMVC\RoutingWithoutMVC\obj\Debug\net8.0\RoutingWithoutMVC.RazorAssemblyInfo.cs
