@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\SubscriptionApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7AF00627-8129-4AEE-B5A3-4A30E6E064C4}|SubscriptionApi\\SubscriptionApi.csproj|d:\\github\\asp dot net core\\asp-.net-core\\subscriptionapi\\subscriptionapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AF00627-8129-4AEE-B5A3-4A30E6E064C4}|SubscriptionApi\\SubscriptionApi.csproj|solutionrelative:subscriptionapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AF00627-8129-4AEE-B5A3-4A30E6E064C4}|SubscriptionApi\\SubscriptionApi.csproj|d:\\github\\asp dot net core\\asp-.net-core\\subscriptionapi\\subscriptionapi\\controllers\\uniquestringcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AF00627-8129-4AEE-B5A3-4A30E6E064C4}|SubscriptionApi\\SubscriptionApi.csproj|solutionrelative:subscriptionapi\\controllers\\uniquestringcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AF00627-8129-4AEE-B5A3-4A30E6E064C4}|SubscriptionApi\\SubscriptionApi.csproj|d:\\github\\asp dot net core\\asp-.net-core\\subscriptionapi\\subscriptionapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7AF00627-8129-4AEE-B5A3-4A30E6E064C4}|SubscriptionApi\\SubscriptionApi.csproj|solutionrelative:subscriptionapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AF00627-8129-4AEE-B5A3-4A30E6E064C4}|SubscriptionApi\\SubscriptionApi.csproj|d:\\github\\asp dot net core\\asp-.net-core\\subscriptionapi\\subscriptionapi\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AF00627-8129-4AEE-B5A3-4A30E6E064C4}|SubscriptionApi\\SubscriptionApi.csproj|solutionrelative:subscriptionapi\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AF00627-8129-4AEE-B5A3-4A30E6E064C4}|SubscriptionApi\\SubscriptionApi.csproj|d:\\github\\asp dot net core\\asp-.net-core\\subscriptionapi\\subscriptionapi\\controllers\\randommodelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AF00627-8129-4AEE-B5A3-4A30E6E064C4}|SubscriptionApi\\SubscriptionApi.csproj|solutionrelative:subscriptionapi\\controllers\\randommodelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AF00627-8129-4AEE-B5A3-4A30E6E064C4}|SubscriptionApi\\SubscriptionApi.csproj|d:\\github\\asp dot net core\\asp-.net-core\\subscriptionapi\\subscriptionapi\\models\\subscriptionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AF00627-8129-4AEE-B5A3-4A30E6E064C4}|SubscriptionApi\\SubscriptionApi.csproj|solutionrelative:subscriptionapi\\models\\subscriptionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CheckoutController.cs",
+              "DocumentMoniker": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\SubscriptionApi\\SubscriptionApi\\Controllers\\CheckoutController.cs",
+              "RelativeDocumentMoniker": "SubscriptionApi\\Controllers\\CheckoutController.cs",
+              "ToolTip": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\SubscriptionApi\\SubscriptionApi\\Controllers\\CheckoutController.cs",
+              "RelativeToolTip": "SubscriptionApi\\Controllers\\CheckoutController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAEwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T08:21:52.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\SubscriptionApi\\SubscriptionApi\\appsettings.json",
+              "RelativeDocumentMoniker": "SubscriptionApi\\appsettings.json",
+              "ToolTip": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\SubscriptionApi\\SubscriptionApi\\appsettings.json",
+              "RelativeToolTip": "SubscriptionApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-05T08:23:18.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UniqueStringController.cs",
+              "DocumentMoniker": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\SubscriptionApi\\SubscriptionApi\\Controllers\\UniqueStringController.cs",
+              "RelativeDocumentMoniker": "SubscriptionApi\\Controllers\\UniqueStringController.cs",
+              "ToolTip": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\SubscriptionApi\\SubscriptionApi\\Controllers\\UniqueStringController.cs",
+              "RelativeToolTip": "SubscriptionApi\\Controllers\\UniqueStringController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T08:22:11.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\SubscriptionApi\\SubscriptionApi\\Program.cs",
+              "RelativeDocumentMoniker": "SubscriptionApi\\Program.cs",
+              "ToolTip": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\SubscriptionApi\\SubscriptionApi\\Program.cs",
+              "RelativeToolTip": "SubscriptionApi\\Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAuwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T08:23:08.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RandomModelController.cs",
+              "DocumentMoniker": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\SubscriptionApi\\SubscriptionApi\\Controllers\\RandomModelController.cs",
+              "RelativeDocumentMoniker": "SubscriptionApi\\Controllers\\RandomModelController.cs",
+              "ToolTip": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\SubscriptionApi\\SubscriptionApi\\Controllers\\RandomModelController.cs",
+              "RelativeToolTip": "SubscriptionApi\\Controllers\\RandomModelController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAuwCUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T08:22:01.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SubscriptionModel.cs",
+              "DocumentMoniker": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\SubscriptionApi\\SubscriptionApi\\Models\\SubscriptionModel.cs",
+              "RelativeDocumentMoniker": "SubscriptionApi\\Models\\SubscriptionModel.cs",
+              "ToolTip": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\SubscriptionApi\\SubscriptionApi\\Models\\SubscriptionModel.cs",
+              "RelativeToolTip": "SubscriptionApi\\Models\\SubscriptionModel.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAuwDYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T08:22:27.278Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
