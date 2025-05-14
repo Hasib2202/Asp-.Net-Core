@@ -59,7 +59,7 @@ This system is designed to manage accounts, vouchers, and user roles within a sm
 
 > Screenshots are provided below to demonstrate functionality (include actual images in your repo):
 
-- Login Page  
+- Login Page ![Image](https://github.com/user-attachments/assets/f4506a32-f15d-481f-9a68-bb357e08afdb) 
 - Dashboard with Role-Based Access  
 - Chart of Accounts UI  
 - Voucher Entry Form  
