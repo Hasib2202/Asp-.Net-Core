@@ -18,6 +18,8 @@ namespace ProjectMiniAccountManagementSystem.Data
             var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
             var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
 
+//user role define
+            
             // Ensure DB is created
             context.Database.Migrate();
 
