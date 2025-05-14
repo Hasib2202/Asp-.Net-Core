@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace ProjectMiniAccountManagementSystem.Pages.Accounts
 {
+//role based access
     [Authorize(Roles = "Admin,Accountant,Viewer")]
     public class ChartOfAccountsModel : PageModel
     {
