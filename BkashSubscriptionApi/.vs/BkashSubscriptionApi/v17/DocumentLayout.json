@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\BkashSubscriptionApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{021D7653-F897-4CAE-B6B6-68B4A2EDB18D}|BkashSubscriptionApi\\BkashSubscriptionApi.csproj|d:\\github\\asp dot net core\\asp-.net-core\\bkashsubscriptionapi\\bkashsubscriptionapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{021D7653-F897-4CAE-B6B6-68B4A2EDB18D}|BkashSubscriptionApi\\BkashSubscriptionApi.csproj|solutionrelative:bkashsubscriptionapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{021D7653-F897-4CAE-B6B6-68B4A2EDB18D}|BkashSubscriptionApi\\BkashSubscriptionApi.csproj|d:\\github\\asp dot net core\\asp-.net-core\\bkashsubscriptionapi\\bkashsubscriptionapi\\services\\uniquestringservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{021D7653-F897-4CAE-B6B6-68B4A2EDB18D}|BkashSubscriptionApi\\BkashSubscriptionApi.csproj|solutionrelative:bkashsubscriptionapi\\services\\uniquestringservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -41,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{021D7653-F897-4CAE-B6B6-68B4A2EDB18D}|BkashSubscriptionApi\\BkashSubscriptionApi.csproj|d:\\github\\asp dot net core\\asp-.net-core\\bkashsubscriptionapi\\bkashsubscriptionapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{021D7653-F897-4CAE-B6B6-68B4A2EDB18D}|BkashSubscriptionApi\\BkashSubscriptionApi.csproj|solutionrelative:bkashsubscriptionapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{021D7653-F897-4CAE-B6B6-68B4A2EDB18D}|BkashSubscriptionApi\\BkashSubscriptionApi.csproj|d:\\github\\asp dot net core\\asp-.net-core\\bkashsubscriptionapi\\bkashsubscriptionapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{021D7653-F897-4CAE-B6B6-68B4A2EDB18D}|BkashSubscriptionApi\\BkashSubscriptionApi.csproj|solutionrelative:bkashsubscriptionapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,37 +54,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UniqueStringController.cs",
-              "DocumentMoniker": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\BkashSubscriptionApi\\BkashSubscriptionApi\\Controllers\\UniqueStringController.cs",
-              "RelativeDocumentMoniker": "BkashSubscriptionApi\\Controllers\\UniqueStringController.cs",
-              "ToolTip": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\BkashSubscriptionApi\\BkashSubscriptionApi\\Controllers\\UniqueStringController.cs",
-              "RelativeToolTip": "BkashSubscriptionApi\\Controllers\\UniqueStringController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T08:45:52.481Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BkashSubscriptionController.cs",
-              "DocumentMoniker": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\BkashSubscriptionApi\\BkashSubscriptionApi\\Controllers\\BkashSubscriptionController.cs",
-              "RelativeDocumentMoniker": "BkashSubscriptionApi\\Controllers\\BkashSubscriptionController.cs",
-              "ToolTip": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\BkashSubscriptionApi\\BkashSubscriptionApi\\Controllers\\BkashSubscriptionController.cs",
-              "RelativeToolTip": "BkashSubscriptionApi\\Controllers\\BkashSubscriptionController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAowDUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T08:46:14.04Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\BkashSubscriptionApi\\BkashSubscriptionApi\\appsettings.json",
               "RelativeDocumentMoniker": "BkashSubscriptionApi\\appsettings.json",
@@ -92,11 +66,12 @@
               "RelativeToolTip": "BkashSubscriptionApi\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-05T08:49:17.288Z"
+              "WhenOpened": "2025-05-05T08:49:17.288Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "RandomJsonController.cs",
               "DocumentMoniker": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\BkashSubscriptionApi\\BkashSubscriptionApi\\Controllers\\RandomJsonController.cs",
               "RelativeDocumentMoniker": "BkashSubscriptionApi\\Controllers\\RandomJsonController.cs",
@@ -104,12 +79,11 @@
               "RelativeToolTip": "BkashSubscriptionApi\\Controllers\\RandomJsonController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T08:46:02.776Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T08:46:02.776Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ISubscriptionService.cs",
               "DocumentMoniker": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\BkashSubscriptionApi\\BkashSubscriptionApi\\Services\\ISubscriptionService.cs",
               "RelativeDocumentMoniker": "BkashSubscriptionApi\\Services\\ISubscriptionService.cs",
@@ -117,12 +91,11 @@
               "RelativeToolTip": "BkashSubscriptionApi\\Services\\ISubscriptionService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T08:47:16.813Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T08:47:16.813Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "IUniqueStringService.cs",
               "DocumentMoniker": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\BkashSubscriptionApi\\BkashSubscriptionApi\\Services\\IUniqueStringService.cs",
               "RelativeDocumentMoniker": "BkashSubscriptionApi\\Services\\IUniqueStringService.cs",
@@ -130,25 +103,11 @@
               "RelativeToolTip": "BkashSubscriptionApi\\Services\\IUniqueStringService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T08:47:01.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T08:47:01.306Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SubscriptionService.cs",
-              "DocumentMoniker": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\BkashSubscriptionApi\\BkashSubscriptionApi\\Services\\SubscriptionService.cs",
-              "RelativeDocumentMoniker": "BkashSubscriptionApi\\Services\\SubscriptionService.cs",
-              "ToolTip": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\BkashSubscriptionApi\\BkashSubscriptionApi\\Services\\SubscriptionService.cs",
-              "RelativeToolTip": "BkashSubscriptionApi\\Services\\SubscriptionService.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAwwHsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T08:47:25.48Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "UniqueStringService.cs",
               "DocumentMoniker": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\BkashSubscriptionApi\\BkashSubscriptionApi\\Services\\UniqueStringService.cs",
               "RelativeDocumentMoniker": "BkashSubscriptionApi\\Services\\UniqueStringService.cs",
@@ -161,7 +120,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
+              "Title": "BkashSubscriptionController.cs",
+              "DocumentMoniker": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\BkashSubscriptionApi\\BkashSubscriptionApi\\Controllers\\BkashSubscriptionController.cs",
+              "RelativeDocumentMoniker": "BkashSubscriptionApi\\Controllers\\BkashSubscriptionController.cs",
+              "ToolTip": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\BkashSubscriptionApi\\BkashSubscriptionApi\\Controllers\\BkashSubscriptionController.cs",
+              "RelativeToolTip": "BkashSubscriptionApi\\Controllers\\BkashSubscriptionController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowDUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T08:46:14.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UniqueStringController.cs",
+              "DocumentMoniker": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\BkashSubscriptionApi\\BkashSubscriptionApi\\Controllers\\UniqueStringController.cs",
+              "RelativeDocumentMoniker": "BkashSubscriptionApi\\Controllers\\UniqueStringController.cs",
+              "ToolTip": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\BkashSubscriptionApi\\BkashSubscriptionApi\\Controllers\\UniqueStringController.cs",
+              "RelativeToolTip": "BkashSubscriptionApi\\Controllers\\UniqueStringController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T08:45:52.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SubscriptionService.cs",
+              "DocumentMoniker": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\BkashSubscriptionApi\\BkashSubscriptionApi\\Services\\SubscriptionService.cs",
+              "RelativeDocumentMoniker": "BkashSubscriptionApi\\Services\\SubscriptionService.cs",
+              "ToolTip": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\BkashSubscriptionApi\\BkashSubscriptionApi\\Services\\SubscriptionService.cs",
+              "RelativeToolTip": "BkashSubscriptionApi\\Services\\SubscriptionService.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAwwHsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T08:47:25.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "ApiResponse.cs",
               "DocumentMoniker": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\BkashSubscriptionApi\\BkashSubscriptionApi\\Models\\ApiResponse.cs",
               "RelativeDocumentMoniker": "BkashSubscriptionApi\\Models\\ApiResponse.cs",
@@ -173,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\BkashSubscriptionApi\\BkashSubscriptionApi\\Program.cs",
               "RelativeDocumentMoniker": "BkashSubscriptionApi\\Program.cs",
@@ -185,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "SubscriptionRequestModel.cs",
               "DocumentMoniker": "D:\\GitHub\\Asp Dot Net Core\\Asp-.Net-Core\\BkashSubscriptionApi\\BkashSubscriptionApi\\Models\\SubscriptionRequestModel.cs",
               "RelativeDocumentMoniker": "BkashSubscriptionApi\\Models\\SubscriptionRequestModel.cs",

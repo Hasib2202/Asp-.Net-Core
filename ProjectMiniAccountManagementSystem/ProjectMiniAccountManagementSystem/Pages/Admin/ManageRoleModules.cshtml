@@ -1,0 +1,89 @@
+﻿@page
+@model ProjectMiniAccountManagementSystem.Pages.Admin.ManageRoleModulesModel
+@using Microsoft.AspNetCore.Mvc.Rendering
+
+<h2>Manage Module Access</h2>
+
+<!-- Success Alert -->
+@if (!string.IsNullOrEmpty(Model.StatusMessage))
+{
+    <div class="alert alert-success" role="alert">
+        @Model.StatusMessage
+    </div>
+}
+
+<div class="card mb-4">
+    <div class="card-header">
+        <h5 class="mb-0">Role Selection</h5>
+    </div>
+    <div class="card-body">
+        <form method="get" class="mb-0">
+            <div class="row align-items-center">
+                <div class="col-md-9">
+                    <div class="form-group mb-0">
+                        <label>Select Role:</label>
+                        <select asp-for="SelectedRoleId"
+                                asp-items="@(new SelectList(Model.Roles, "Id", "Name"))"
+                                class="form-select">
+                            <option value="">-- choose role --</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <button type="submit" class="btn btn-primary mt-4">Load Permissions</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@if (!string.IsNullOrEmpty(Model.SelectedRoleId))
+{
+    <div class="card">
+        <div class="card-header">
+            <h5 class="mb-0">Module Permissions for @Model.Roles.FirstOrDefault(r => r.Id == Model.SelectedRoleId)?.Name</h5>
+        </div>
+        <div class="card-body">
+            <form method="post">
+                <input asp-for="SelectedRoleId" type="hidden" />
+
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th style="width: 50px"></th>
+                                <th>Module Name</th>
+                                <th>URL</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var m in Model.Modules)
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input"
+                                                   type="checkbox"
+                                                   name="SelectedModuleIds"
+                                                   value="@m.Id"
+                                                   id="mod_@m.Id"
+                                            @(Model.SelectedModuleIds.Contains(m.Id) ? "checked" : "") />
+                                        </div>
+                                    </td>
+                                    <td><label class="form-check-label" for="mod_@m.Id">@m.Name</label></td>
+                                    <td>@m.Url</td>
+                                    <td>@m.Description</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="mt-3">
+                    <button type="submit" class="btn btn-success">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+}

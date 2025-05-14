@@ -1,0 +1,42 @@
+﻿@page
+@model ProjectMiniAccountManagementSystem.Pages.Admin.RoleModuleAccessModel
+@{
+    ViewData["Title"] = "My Module Access";
+}
+
+<h2>My Module Access</h2>
+
+@if (!Model.RoleModulesList.Any())
+{
+    <div class="alert alert-warning">
+        You have not been assigned any modules.
+    </div>
+}
+else
+{
+    @foreach (var rm in Model.RoleModulesList)
+    {
+        <div class="card my-3 border-secondary">
+            <div class="card-header bg-secondary text-white">
+                <strong>@rm.RoleName</strong> Modules
+            </div>
+            <div class="card-body">
+                @if (rm.Modules.Any())
+                {
+                    <ul class="list-group list-group-flush">
+                        @foreach (var module in rm.Modules)
+                        {
+                            <li class="list-group-item">@module</li>
+                        }
+                    </ul>
+                }
+                else
+                {
+                    <div class="alert alert-warning mb-0">
+                        You have no access to any modules yet.
+                    </div>
+                }
+            </div>
+        </div>
+    }
+}

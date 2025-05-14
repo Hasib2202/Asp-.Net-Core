@@ -1,0 +1,253 @@
+﻿@page
+@model ProjectMiniAccountManagementSystem.Pages.Vouchers.VoucherEntryModel
+@{
+    ViewData["Title"] = Model.VoucherVM.Voucher.VoucherId > 0 ? "Edit Voucher" : "New Voucher";
+}
+
+<div class="container">
+    <h2>@ViewData["Title"]</h2>
+
+    @if (!string.IsNullOrEmpty(Model.StatusMessage))
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @Model.StatusMessage
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <div class="card">
+        <div class="card-body">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                
+                @if (Model.VoucherVM.Voucher.VoucherId > 0)
+                {
+                    <input type="hidden" asp-for="VoucherVM.Voucher.VoucherId" />
+                }
+
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label asp-for="VoucherVM.Voucher.Date" class="control-label"></label>
+                            <input asp-for="VoucherVM.Voucher.Date" class="form-control" type="date" />
+                            <span asp-validation-for="VoucherVM.Voucher.Date" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label asp-for="VoucherVM.Voucher.ReferenceNo" class="control-label"></label>
+                            <input asp-for="VoucherVM.Voucher.ReferenceNo" class="form-control" />
+                            <span asp-validation-for="VoucherVM.Voucher.ReferenceNo" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label asp-for="VoucherVM.Voucher.VoucherType" class="control-label"></label>
+                            <select asp-for="VoucherVM.Voucher.VoucherType" asp-items="Model.VoucherTypes" class="form-select"></select>
+                            <span asp-validation-for="VoucherVM.Voucher.VoucherType" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="VoucherVM.Voucher.Description" class="control-label"></label>
+                    <textarea asp-for="VoucherVM.Voucher.Description" class="form-control" rows="2"></textarea>
+                    <span asp-validation-for="VoucherVM.Voucher.Description" class="text-danger"></span>
+                </div>
+
+                <hr />
+                <h4>Voucher Details</h4>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="voucherDetailsTable">
+                        <thead>
+                            <tr>
+                                <th>Debit Account</th>
+                                <th>Credit Account</th>
+                                <th>Amount</th>
+                                <th>Description</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for (int i = 0; i < Model.VoucherVM.Voucher.VoucherDetails.Count; i++)
+                            {
+                                <tr>
+                                    <td>
+                                        @if (Model.VoucherVM.Voucher.VoucherDetails[i].VoucherDetailId > 0)
+                                        {
+                                            <input type="hidden" asp-for="VoucherVM.Voucher.VoucherDetails[i].VoucherDetailId" />
+                                        }
+                                        <select asp-for="VoucherVM.Voucher.VoucherDetails[i].DebitAccountId" 
+                                                asp-items="@(new SelectList(Model.VoucherVM.AccountsList, "AccountId", "DisplayText", Model.VoucherVM.Voucher.VoucherDetails[i].DebitAccountId))" 
+                                                class="form-select debit-account">
+                                            <option value="">-- Select Account --</option>
+                                        </select>
+                                        <span asp-validation-for="VoucherVM.Voucher.VoucherDetails[i].DebitAccountId" class="text-danger"></span>
+                                    </td>
+                                    <td>
+                                        <select asp-for="VoucherVM.Voucher.VoucherDetails[i].CreditAccountId" 
+                                                asp-items="@(new SelectList(Model.VoucherVM.AccountsList, "AccountId", "DisplayText", Model.VoucherVM.Voucher.VoucherDetails[i].CreditAccountId))" 
+                                                class="form-select credit-account">
+                                            <option value="">-- Select Account --</option>
+                                        </select>
+                                        <span asp-validation-for="VoucherVM.Voucher.VoucherDetails[i].CreditAccountId" class="text-danger"></span>
+                                    </td>
+                                    <td>
+                                        <input asp-for="VoucherVM.Voucher.VoucherDetails[i].Amount" class="form-control amount-input" />
+                                        <span asp-validation-for="VoucherVM.Voucher.VoucherDetails[i].Amount" class="text-danger"></span>
+                                    </td>
+                                    <td>
+                                        <input asp-for="VoucherVM.Voucher.VoucherDetails[i].Description" class="form-control" />
+                                        <span asp-validation-for="VoucherVM.Voucher.VoucherDetails[i].Description" class="text-danger"></span>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-danger btn-sm remove-detail">Remove</button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2" class="text-end fw-bold">Total:</td>
+                                <td id="totalAmount">0.00</td>
+                                <td colspan="2"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <button type="button" id="addDetailRow" class="btn btn-primary">Add Detail Row</button>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <div class="form-group mt-3">
+                    <input type="submit" value="Save" class="btn btn-success" />
+                    <a asp-page="VoucherList" class="btn btn-secondary">Back to List</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    
+    <script>
+        $(document).ready(function () {
+            // Function to update totals
+            function updateTotals() {
+                let total = 0;
+                $('.amount-input').each(function() {
+                    let value = parseFloat($(this).val()) || 0;
+                    total += value;
+                });
+                $('#totalAmount').text(total.toFixed(2));
+            }
+
+            // Initial calculation
+            updateTotals();
+
+            // Handle changes to amount inputs
+            $(document).on('change', '.amount-input', function() {
+                updateTotals();
+            });
+
+            // Add new detail row
+            $('#addDetailRow').click(function() {
+                let rowCount = $('#voucherDetailsTable tbody tr').length;
+                let newRow = `
+                    <tr>
+                        <td>
+                            <select name="VoucherVM.Voucher.VoucherDetails[${rowCount}].DebitAccountId" 
+                                    id="VoucherVM_Voucher_VoucherDetails_${rowCount}__DebitAccountId" 
+                                    class="form-select debit-account">
+                                <option value="">-- Select Account --</option>
+                                @foreach (var account in Model.VoucherVM.AccountsList)
+                                {
+                                    <text><option value="@account.AccountId">@account.DisplayText</option></text>
+                                }
+                            </select>
+                        </td>
+                        <td>
+                            <select name="VoucherVM.Voucher.VoucherDetails[${rowCount}].CreditAccountId" 
+                                    id="VoucherVM_Voucher_VoucherDetails_${rowCount}__CreditAccountId" 
+                                    class="form-select credit-account">
+                                <option value="">-- Select Account --</option>
+                                @foreach (var account in Model.VoucherVM.AccountsList)
+                                {
+                                    <text><option value="@account.AccountId">@account.DisplayText</option></text>
+                                }
+                            </select>
+                        </td>
+                        <td>
+                            <input name="VoucherVM.Voucher.VoucherDetails[${rowCount}].Amount" 
+                                   id="VoucherVM_Voucher_VoucherDetails_${rowCount}__Amount" 
+                                   class="form-control amount-input" type="text" data-val="true" 
+                                   data-val-number="The field Amount must be a number." 
+                                   data-val-required="The Amount field is required." />
+                            <span class="text-danger field-validation-valid" 
+                                  data-valmsg-for="VoucherVM.Voucher.VoucherDetails[${rowCount}].Amount" 
+                                  data-valmsg-replace="true"></span>
+                        </td>
+                        <td>
+                            <input name="VoucherVM.Voucher.VoucherDetails[${rowCount}].Description" 
+                                   id="VoucherVM_Voucher_VoucherDetails_${rowCount}__Description" 
+                                   class="form-control" type="text" />
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-danger btn-sm remove-detail">Remove</button>
+                        </td>
+                    </tr>
+                `;
+                
+                $('#voucherDetailsTable tbody').append(newRow);
+                
+                // Reattach validation
+                $('form').data('validator', null);
+                $.validator.unobtrusive.parse('form');
+            });
+
+            // Remove detail row
+            $(document).on('click', '.remove-detail', function() {
+                if ($('#voucherDetailsTable tbody tr').length > 1) {
+                    $(this).closest('tr').remove();
+                    updateTotals();
+                    
+                    // Reindex rows to maintain proper indexing for form submission
+                    $('#voucherDetailsTable tbody tr').each(function(index) {
+                        $(this).find('select, input').each(function() {
+                            let name = $(this).attr('name');
+                            if (name) {
+                                let newName = name.replace(/\[\d+\]/, '[' + index + ']');
+                                $(this).attr('name', newName);
+                                
+                                let id = $(this).attr('id');
+                                if (id) {
+                                    let newId = id.replace(/_\d+__/, '_' + index + '__');
+                                    $(this).attr('id', newId);
+                                }
+                            }
+                        });
+                    });
+                } else {
+                    alert('At least one voucher detail is required.');
+                }
+            });
+
+            // Handle account selection logic - prevent selecting both debit and credit for same row
+            $(document).on('change', '.debit-account', function() {
+                if ($(this).val()) {
+                    $(this).closest('tr').find('.credit-account').val('');
+                }
+            });
+
+            $(document).on('change', '.credit-account', function() {
+                if ($(this).val()) {
+                    $(this).closest('tr').find('.debit-account').val('');
+                }
+            });
+        });
+    </script>
+}

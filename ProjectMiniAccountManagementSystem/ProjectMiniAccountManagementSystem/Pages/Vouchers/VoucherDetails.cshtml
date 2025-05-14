@@ -1,0 +1,94 @@
+﻿@page "{id:int}"
+@model ProjectMiniAccountManagementSystem.Pages.Vouchers.VoucherDetailModel
+@{
+    ViewData["Title"] = "Voucher Details";
+}
+
+<div class="container">
+    <h2>Voucher Details</h2>
+
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">Voucher #@Model.Voucher.VoucherId</h4>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label class="fw-bold">Date:</label>
+                    <div>@Model.Voucher.Date.ToShortDateString()</div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label class="fw-bold">Reference No:</label>
+                    <div>@Model.Voucher.ReferenceNo</div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label class="fw-bold">Voucher Type:</label>
+                    <div>@Model.Voucher.VoucherType</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <label class="fw-bold">Description:</label>
+                    <div>@(string.IsNullOrEmpty(Model.Voucher.Description) ? "N/A" : Model.Voucher.Description)</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="fw-bold">Created By:</label>
+                    <div>@(string.IsNullOrEmpty(Model.Voucher.CreatedBy) ? "N/A" : Model.Voucher.CreatedBy)</div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="fw-bold">Created Date:</label>
+                    <div>@Model.Voucher.CreatedDate.ToString("g")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header bg-secondary text-white">
+            <h4 class="mb-0">Voucher Entries</h4>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead class="table-light">
+                        <tr>
+                            <th>#</th>
+                            <th>Debit Account</th>
+                            <th>Credit Account</th>
+                            <th>Amount</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var detail in Model.Voucher.VoucherDetails)
+                        {
+                            <tr>
+                                <td>@detail.VoucherDetailId</td>
+                                <td>@(detail.DebitAccountName ?? "N/A")</td>
+                                <td>@(detail.CreditAccountName ?? "N/A")</td>
+                                <td class="text-end">@detail.Amount.ToString("N2")</td>
+                                <td>@(string.IsNullOrEmpty(detail.Description) ? "N/A" : detail.Description)</td>
+                            </tr>
+                        }
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="text-end fw-bold">Total:</td>
+                            <td class="text-end fw-bold">@Model.Voucher.VoucherDetails.Sum(d => d.Amount).ToString("N2")</td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-3">
+        <a asp-page="VoucherEntry" asp-route-id="@Model.Voucher.VoucherId" class="btn btn-primary">Edit</a>
+        <a asp-page="VoucherList" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>

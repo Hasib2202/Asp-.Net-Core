@@ -1,0 +1,97 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ProjectMiniAccountManagementSystem
+build_property.RootNamespace = ProjectMiniAccountManagementSystem
+build_property.ProjectDir = D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\ProjectMiniAccountManagementSystem\ProjectMiniAccountManagementSystem\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\ProjectMiniAccountManagementSystem\ProjectMiniAccountManagementSystem
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/GitHub/Asp Dot Net Core/Asp-.Net-Core/ProjectMiniAccountManagementSystem/ProjectMiniAccountManagementSystem/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHub/Asp Dot Net Core/Asp-.Net-Core/ProjectMiniAccountManagementSystem/ProjectMiniAccountManagementSystem/Pages/Accounts/ChartOfAccounts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcQ2hhcnRPZkFjY291bnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHub/Asp Dot Net Core/Asp-.Net-Core/ProjectMiniAccountManagementSystem/ProjectMiniAccountManagementSystem/Pages/Accounts/_AccountTree.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcX0FjY291bnRUcmVlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHub/Asp Dot Net Core/Asp-.Net-Core/ProjectMiniAccountManagementSystem/ProjectMiniAccountManagementSystem/Pages/Admin/ManageRoleModules.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cTWFuYWdlUm9sZU1vZHVsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHub/Asp Dot Net Core/Asp-.Net-Core/ProjectMiniAccountManagementSystem/ProjectMiniAccountManagementSystem/Pages/Admin/ManageUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cTWFuYWdlVXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHub/Asp Dot Net Core/Asp-.Net-Core/ProjectMiniAccountManagementSystem/ProjectMiniAccountManagementSystem/Pages/Admin/RoleModuleAccess.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUm9sZU1vZHVsZUFjY2Vzcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHub/Asp Dot Net Core/Asp-.Net-Core/ProjectMiniAccountManagementSystem/ProjectMiniAccountManagementSystem/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHub/Asp Dot Net Core/Asp-.Net-Core/ProjectMiniAccountManagementSystem/ProjectMiniAccountManagementSystem/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHub/Asp Dot Net Core/Asp-.Net-Core/ProjectMiniAccountManagementSystem/ProjectMiniAccountManagementSystem/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHub/Asp Dot Net Core/Asp-.Net-Core/ProjectMiniAccountManagementSystem/ProjectMiniAccountManagementSystem/Pages/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHub/Asp Dot Net Core/Asp-.Net-Core/ProjectMiniAccountManagementSystem/ProjectMiniAccountManagementSystem/Pages/Shared/_NavMenuPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9OYXZNZW51UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHub/Asp Dot Net Core/Asp-.Net-Core/ProjectMiniAccountManagementSystem/ProjectMiniAccountManagementSystem/Pages/Shared/_SidebarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9TaWRlYmFyUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHub/Asp Dot Net Core/Asp-.Net-Core/ProjectMiniAccountManagementSystem/ProjectMiniAccountManagementSystem/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHub/Asp Dot Net Core/Asp-.Net-Core/ProjectMiniAccountManagementSystem/ProjectMiniAccountManagementSystem/Pages/Vouchers/VoucherDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm91Y2hlcnNcVm91Y2hlckRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHub/Asp Dot Net Core/Asp-.Net-Core/ProjectMiniAccountManagementSystem/ProjectMiniAccountManagementSystem/Pages/Vouchers/VoucherEntry.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm91Y2hlcnNcVm91Y2hlckVudHJ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHub/Asp Dot Net Core/Asp-.Net-Core/ProjectMiniAccountManagementSystem/ProjectMiniAccountManagementSystem/Pages/Vouchers/VoucherList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm91Y2hlcnNcVm91Y2hlckxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHub/Asp Dot Net Core/Asp-.Net-Core/ProjectMiniAccountManagementSystem/ProjectMiniAccountManagementSystem/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHub/Asp Dot Net Core/Asp-.Net-Core/ProjectMiniAccountManagementSystem/ProjectMiniAccountManagementSystem/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHub/Asp Dot Net Core/Asp-.Net-Core/ProjectMiniAccountManagementSystem/ProjectMiniAccountManagementSystem/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-0ev4owivwy

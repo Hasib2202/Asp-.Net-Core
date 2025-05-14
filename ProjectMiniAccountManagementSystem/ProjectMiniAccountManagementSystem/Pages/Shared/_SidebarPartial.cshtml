@@ -1,0 +1,85 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Microsoft.Extensions.Configuration
+@using Microsoft.Data.SqlClient
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@inject IConfiguration Configuration
+@{
+    // Initialize available modules list
+    var availableModules = new List<(string Name, string Url)>();
+
+    if (SignInManager.IsSignedIn(User))
+    {
+        // Get the current user
+        var user = await UserManager.GetUserAsync(User);
+
+        // Only proceed if user is not null
+        if (user != null)
+        {
+            var userId = user.Id;
+            var userRoles = await UserManager.GetRolesAsync(user);
+
+            using var conn = new SqlConnection(Configuration.GetConnectionString("DefaultConnection"));
+            await conn.OpenAsync();
+
+            // If user is Admin, they get access to all modules
+            if (userRoles.Contains("Admin"))
+            {
+                availableModules.Add(("Chart Of Accounts", "/Accounts/ChartOfAccounts"));
+                availableModules.Add(("Voucher Entry", "/Vouchers/VoucherEntry"));
+                availableModules.Add(("Register User", "/Identity/Account/Register"));
+                availableModules.Add(("Manage Users", "/Admin/ManageUsers"));
+                availableModules.Add(("Manage Module Access", "/Admin/ManageRoleModules"));
+            }
+            else
+            {
+                // For non-admin users, fetch modules based on their roles
+                foreach (var role in userRoles)
+                {
+                    // Get the roleId
+                    string roleId = null;
+                    using (var roleCmd = new SqlCommand("SELECT Id FROM AspNetRoles WHERE Name = @name", conn))
+                    {
+                        roleCmd.Parameters.AddWithValue("@name", role);
+                        var roleIdObj = await roleCmd.ExecuteScalarAsync();
+                        if (roleIdObj != null)
+                            roleId = roleIdObj.ToString();
+                    }
+
+                    if (!string.IsNullOrEmpty(roleId))
+                    {
+                        // Get modules assigned to this role
+                        using var cmd = new SqlCommand(@"
+                            SELECT m.Name, m.Url
+                            FROM Modules m
+                            JOIN ModuleRole mr ON m.Id = mr.ModuleId
+                            WHERE mr.RoleId = @roleId", conn);
+
+                        cmd.Parameters.AddWithValue("@roleId", roleId);
+                        using var reader = await cmd.ExecuteReaderAsync();
+
+                        while (await reader.ReadAsync())
+                        {
+                            var moduleName = reader.GetString(0);
+                            var moduleUrl = reader.GetString(1);
+
+                            // Add module if not already in the list
+                            if (!availableModules.Any(m => m.Url == moduleUrl))
+                            {
+                                availableModules.Add((moduleName, moduleUrl));
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+<div class="list-group mb-3">
+    <a class="list-group-item list-group-item-action" asp-area="" asp-page="/Index">Dashboard</a>
+
+    @foreach (var module in availableModules)
+    {
+        <a class="list-group-item list-group-item-action" href="@module.Url">@module.Name</a>
+    }
+</div>

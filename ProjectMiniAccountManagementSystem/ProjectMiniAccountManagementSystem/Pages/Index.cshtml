@@ -1,0 +1,121 @@
+﻿@page
+@model IndexModel
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.Extensions.Configuration
+@using Microsoft.Data.SqlClient
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@inject IConfiguration Configuration
+
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Mini Account Management System</h1>
+
+    @if (SignInManager.IsSignedIn(User))
+    {
+        var user = await UserManager.GetUserAsync(User);
+        if (user != null)
+        {
+            <p>Hello @user.UserName! You are logged in.</p>
+
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            Quick Access
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                @{
+                                    // Get the user's available modules (similar to sidebar logic)
+                                    var availableModules = new List<(string Name, string Url)>();
+
+                                    var userRoles = await UserManager.GetRolesAsync(user);
+
+                                    using var conn = new SqlConnection(Configuration.GetConnectionString("DefaultConnection"));
+                                    await conn.OpenAsync();
+
+                                    if (userRoles.Contains("Admin"))
+                                    {
+                                        availableModules.Add(("Chart Of Accounts", "/Accounts/ChartOfAccounts"));
+                                        availableModules.Add(("Voucher Entry", "/Vouchers/VoucherEntry"));
+                                        availableModules.Add(("Register User", "/Identity/Account/Register"));
+                                        availableModules.Add(("Manage Users", "/Admin/ManageUsers"));
+                                        availableModules.Add(("Manage Module Access", "/Admin/ManageRoleModules"));
+                                    }
+                                    else
+                                    {
+                                        // Get modules for their roles (similar to sidebar logic)
+                                        foreach (var role in userRoles)
+                                        {
+                                            string roleId = null;
+                                            using (var roleCmd = new SqlCommand("SELECT Id FROM AspNetRoles WHERE Name = @name", conn))
+                                            {
+                                                roleCmd.Parameters.AddWithValue("@name", role);
+                                                var roleIdObj = await roleCmd.ExecuteScalarAsync();
+                                                if (roleIdObj != null)
+                                                    roleId = roleIdObj.ToString();
+                                            }
+
+                                            if (!string.IsNullOrEmpty(roleId))
+                                            {
+                                                using var cmd = new SqlCommand(@"
+                        SELECT m.Name, m.Url
+                        FROM Modules m
+                        JOIN ModuleRole mr ON m.Id = mr.ModuleId
+                        WHERE mr.RoleId = @roleId", conn);
+
+                                                cmd.Parameters.AddWithValue("@roleId", roleId);
+                                                using var reader = await cmd.ExecuteReaderAsync();
+
+                                                while (await reader.ReadAsync())
+                                                {
+                                                    var moduleName = reader.GetString(0);
+                                                    var moduleUrl = reader.GetString(1);
+
+                                                    if (!availableModules.Any(m => m.Url == moduleUrl))
+                                                    {
+                                                        availableModules.Add((moduleName, moduleUrl));
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                @foreach (var module in availableModules)
+                                {
+                                    <div class="col-md-3 mb-3">
+                                        <a href="@module.Url" class="btn btn-primary btn-lg w-100">@module.Name</a>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        else
+        {
+            <p>There was an issue retrieving your user information. Please try logging in again.</p>
+            <a class="btn btn-primary" asp-area="Identity" asp-page="/Account/Login">Login</a>
+        }
+    }
+    else
+    {
+        <p>Please log in to access the system features.</p>
+        <a class="btn btn-primary" asp-area="Identity" asp-page="/Account/Login">Login</a>
+        <a class="btn btn-secondary" asp-area="Identity" asp-page="/Account/Register">Register</a>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Any additional JavaScript for the home page
+        });
+    </script>
+}

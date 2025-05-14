@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BkashSubscriptionApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17fc22226bd6c9e84a020817d492aa7175b804a5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b22dd3acdf765d63c78eaa6f7cf1c5d92f0a764")]
 [assembly: System.Reflection.AssemblyProductAttribute("BkashSubscriptionApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BkashSubscriptionApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

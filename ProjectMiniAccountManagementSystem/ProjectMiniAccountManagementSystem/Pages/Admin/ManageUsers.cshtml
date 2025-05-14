@@ -1,0 +1,56 @@
+﻿@page
+@model ManageUsersModel
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>Roles</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model.Users)
+        {
+            <tr>
+                <td>@user.User.Email</td>
+                <td>
+                    @foreach (var role in user.UserRoles)
+                    {
+                        <span class="badge bg-primary">@role</span>
+                    }
+                </td>
+                <td>
+                    <form method="post" class="d-inline">
+                        <select name="roleName" class="form-select">
+                            @foreach (var role in Model.Roles)
+                            {
+                                <option value="@role.Name">@role.Name</option>
+                            }
+                        </select>
+                        <input type="hidden" name="userId" value="@user.User.Id" />
+                        <br />
+                        <button type="submit" asp-page-handler="AssignRole"
+                                class="btn btn-sm btn-success">
+                            Add Role
+                        </button>
+                        <br />
+                    </form>
+
+                    @foreach (var role in user.UserRoles)
+                    {
+                        <form method="post" class="d-inline">
+                            <input type="hidden" name="userId" value="@user.User.Id" />
+                            <input type="hidden" name="roleName" value="@role" />
+                            <br />
+                            <button type="submit" asp-page-handler="RemoveRole"
+                                    class="btn btn-sm btn-danger">
+                                Remove @role
+                            </button>
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

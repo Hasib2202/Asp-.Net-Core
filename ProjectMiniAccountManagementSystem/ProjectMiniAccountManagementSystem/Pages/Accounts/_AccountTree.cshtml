@@ -1,0 +1,23 @@
+﻿@model IEnumerable<ProjectMiniAccountManagementSystem.Pages.Accounts.ChartOfAccountsModel.AccountItem>
+
+<ul class="list-group mb-2">
+    @foreach (var node in Model)
+    {
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            @node.AccountName
+            <div>
+                @if (node.Children?.Any() == true)
+                {
+                    <span class="badge bg-secondary me-2">@node.Children.Count</span>
+                }
+                <a href="?id=@node.AccountId" class="btn btn-sm btn-outline-primary">Edit</a>
+            </div>
+        </li>
+        @if (node.Children?.Any() == true)
+        {
+            <li class="ps-4">
+                @await Html.PartialAsync("_AccountTree", node.Children)
+            </li>
+        }
+    }
+</ul>
