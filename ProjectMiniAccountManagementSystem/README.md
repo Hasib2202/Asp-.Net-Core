@@ -63,10 +63,11 @@ This system is designed to manage accounts, vouchers, and user roles within a sm
 - Register Page ![Image](https://github.com/user-attachments/assets/a8d5c5c0-3f83-4356-b411-9f45a023db18)
 - Admin Dahboard ![Image](https://github.com/user-attachments/assets/67519f22-cf44-4f8d-8371-bedc492526db)
 - Dashboard with Role-Based Access  ![Image](https://github.com/user-attachments/assets/003affb1-bc72-4733-bb53-d9bc8498e0fb)
-- Chart of Accounts UI  ![Image](https://github.com/user-attachments/assets/c5bd63f8-92a2-4c1f-8a8c-c8923968d2af) 
+- Chart of Accounts UI   ![Image](https://github.com/user-attachments/assets/ba484d16-a01d-4a03-86d2-f45180d75a38)
 - Manage Module Access  ![Image](https://github.com/user-attachments/assets/246fa402-da58-4309-8575-2a2efe26700b)
+- Voucher Entry ![Image](https://github.com/user-attachments/assets/c5bd63f8-92a2-4c1f-8a8c-c8923968d2af)
 - Export to Excel Button ![Image](https://github.com/user-attachments/assets/2c3131d1-d82e-46da-b224-6d49ac429bf2)
-- hh ![Image](https://github.com/user-attachments/assets/ba484d16-a01d-4a03-86d2-f45180d75a38)
+
 
 
 ---
