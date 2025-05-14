@@ -77,18 +77,15 @@ This system is designed to manage accounts, vouchers, and user roles within a sm
 
 ---
 
-## 🔗 Live Demo / GitHub Repo
-
-> GitHub: [Insert your GitHub Repo URL here]
 
 ---
 
 ## 👤 Author
 
 **[Your Full Name]**  
-📧 Email: [YourEmail@example.com]  
-📱 Phone: [YourPhoneNumber]  
-🔗 LinkedIn: [Your LinkedIn URL – optional]
+📧 Email: Md. Mostofa Hasib
+📱 Phone: 01747496866
+🔗 LinkedIn: https://www.linkedin.com/in/md-mostofa-hasib-5b4027184/
 
 ---
 
