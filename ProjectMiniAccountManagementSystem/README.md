@@ -82,8 +82,8 @@ This system is designed to manage accounts, vouchers, and user roles within a sm
 
 ## 👤 Author
 
-**[Your Full Name]**  
-📧 Email: Md. Mostofa Hasib
+**Md. Mostofa Hasib**  
+📧 Email: hasibammostofahasib@gmail.com
 📱 Phone: 01747496866
 🔗 LinkedIn: https://www.linkedin.com/in/md-mostofa-hasib-5b4027184/
 
