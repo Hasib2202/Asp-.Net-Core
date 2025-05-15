@@ -1,4 +1,4 @@
-# 💼 Mini Account Management System
+# 💼 Mini Account Management System :)
 
 This is a submission for the Dot.Net task provided by **Qtec Solution Limited**. The project is built using **ASP.NET Core with Razor Pages** and **MS SQL Server** utilizing **stored procedures only**, and implements a simple but functional account management system.
 
