@@ -142,12 +142,6 @@ D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\ProjectMiniAccountManagementSystem\Proj
 D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\ProjectMiniAccountManagementSystem\ProjectMiniAccountManagementSystem\obj\Debug\net8.0\staticwebassets.build.json
 D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\ProjectMiniAccountManagementSystem\ProjectMiniAccountManagementSystem\obj\Debug\net8.0\staticwebassets.development.json
 D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\ProjectMiniAccountManagementSystem\ProjectMiniAccountManagementSystem\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\ProjectMiniAccountManagementSystem\ProjectMiniAccountManagementSystem\obj\Debug\net8.0\staticwebassets\msbuild.ProjectMiniAccountManagementSystem.Microsoft.AspNetCore.StaticWebAssets.props
-D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\ProjectMiniAccountManagementSystem\ProjectMiniAccountManagementSystem\obj\Debug\net8.0\staticwebassets\msbuild.ProjectMiniAccountManagementSystem.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\ProjectMiniAccountManagementSystem\ProjectMiniAccountManagementSystem\obj\Debug\net8.0\staticwebassets\msbuild.build.ProjectMiniAccountManagementSystem.props
-D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\ProjectMiniAccountManagementSystem\ProjectMiniAccountManagementSystem\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ProjectMiniAccountManagementSystem.props
-D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\ProjectMiniAccountManagementSystem\ProjectMiniAccountManagementSystem\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ProjectMiniAccountManagementSystem.props
-D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\ProjectMiniAccountManagementSystem\ProjectMiniAccountManagementSystem\obj\Debug\net8.0\staticwebassets.pack.json
 D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\ProjectMiniAccountManagementSystem\ProjectMiniAccountManagementSystem\obj\Debug\net8.0\ProjectM.0C3DE9DA.Up2Date
 D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\ProjectMiniAccountManagementSystem\ProjectMiniAccountManagementSystem\obj\Debug\net8.0\ProjectMiniAccountManagementSystem.dll
 D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\ProjectMiniAccountManagementSystem\ProjectMiniAccountManagementSystem\obj\Debug\net8.0\refint\ProjectMiniAccountManagementSystem.dll
@@ -163,3 +157,4 @@ D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\ProjectMiniAccountManagementSystem\Proj
 D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\ProjectMiniAccountManagementSystem\ProjectMiniAccountManagementSystem\bin\Debug\net8.0\RBush.dll
 D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\ProjectMiniAccountManagementSystem\ProjectMiniAccountManagementSystem\bin\Debug\net8.0\SixLabors.Fonts.dll
 D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\ProjectMiniAccountManagementSystem\ProjectMiniAccountManagementSystem\bin\Debug\net8.0\System.IO.Packaging.dll
+D:\GitHub\Asp Dot Net Core\Asp-.Net-Core\ProjectMiniAccountManagementSystem\ProjectMiniAccountManagementSystem\obj\Debug\net8.0\staticwebassets.build.json.cache
